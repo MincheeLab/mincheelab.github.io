@@ -1,29 +1,27 @@
 <!doctype html>
-<html>
-<head lang="en">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	
-	<title>Minchee Foundation - a fab lab in Macau</title> 
-	<meta name="description" content="Minchee Foundation, Minchee Lab a fab lab in Macau, China" />	    
-	<meta name="keywords" content="fablab, macau, macao, china, sharing, making, experimenting, education, research">
-	<meta property="og:title" content="">
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>src</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="fancybox/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/font-awesome.min.css" rel="stylesheet">
-	
-	<link rel="stylesheet" type="text/css" href="css/style.css">	
-	
-	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	
-	
-	<link rel="prefetch" href="images/zoom.png">
-		
-</head>
+    <title>Minchee Foundation - a fab lab in Macau</title> 
+    <meta name="description" content="Minchee Foundation, Minchee Lab a fab lab in Macau, China" />	    
+    <meta name="keywords" content="fablab, macau, macao, china, sharing, making, experimenting, education, research">
+    <meta property="og:title" content="">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-<body>
-	<div class="navbar navbar-fixed-top" data-activeslide="1">
+    <link rel="stylesheet" href="styles/vendor.css"/>
+
+    <link rel="stylesheet" href="styles/main.css"/>
+
+    <script src="scripts/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+    <div class="navbar navbar-fixed-top" data-activeslide="1">
 		<div class="container">
 		
 			<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
@@ -247,34 +245,21 @@
 			</div><!-- /row -->
 		</div><!-- /container -->
 	</div><!-- /Slide 6 -->
-	
-</body>
 
-	<!-- SCRIPTS -->
-	<script src="js/html5shiv.js"></script>
-	<script src="js/jquery-1.10.2.min.js"></script>
-	<script src="js/jquery-migrate-1.2.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="fancybox/jquery.fancybox.pack-v=2.1.5.js"></script>
-	<script src="js/script.js"></script>
-	
-	<!-- fancybox init -->
-	<script>
-	$(document).ready(function(e) {
-		var lis = $('.nav > li');
-		menu_focus( lis[0], 1 );
-		
-		$(".fancybox").fancybox({
-			padding: 10,
-			helpers: {
-				overlay: {
-					locked: false
-				}
-			}
-		});
-	
-	});
-	</script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                                                              function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                             e.src='//www.google-analytics.com/analytics.js';
+                             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
 
+    <script src="scripts/vendor.js"></script>
+
+    <script src="scripts/plugins.js"></script>
+
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
