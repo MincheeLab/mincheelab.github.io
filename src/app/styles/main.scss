@@ -1,9 +1,12 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
-//http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext
+$fa-font-path: '../bower_components/font-awesome/fonts/';
+
 // bower:scss
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
-@import "../bower_components/font-awesome/css/font-awesome.css";
 // endbower
+//http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext
+@import '../bower_components/font-awesome/scss/font-awesome';
+
 
 /*
  * Author: Carlos Alvarez
