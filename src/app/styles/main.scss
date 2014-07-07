@@ -1,11 +1,12 @@
-$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
-$fa-font-path: '../bower_components/font-awesome/fonts/';
-
+// $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+// $fa-font-path: '../bower_components/font-awesome/fonts/';
+// $fa-font-path: '../fonts';
+$icon-font-path: "../fonts";
 // bower:scss
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+@import "../bower_components/font-awesome/scss/font-awesome";
 // endbower
 //http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext
-@import '../bower_components/font-awesome/scss/font-awesome';
 
 
 /*

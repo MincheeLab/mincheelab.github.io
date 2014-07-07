@@ -57,6 +57,7 @@ gulp.task('fonts', function () {
         .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
         .pipe($.flatten())
         .pipe(gulp.dest('../fonts'))
+        .pipe(gulp.dest('app/fonts'))
         .pipe($.size());
 });
 
@@ -85,7 +86,7 @@ gulp.task('connect', function () {
         });
 });
 
-gulp.task('serve', ['connect', 'styles'], function () {
+gulp.task('serve', ['connect', 'styles', 'fonts'], function () {
     require('opn')('http://localhost:9000');
 });
 
