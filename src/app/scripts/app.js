@@ -21,6 +21,7 @@ angular.module('app', [
     $stateProvider
     .state('home',{
       url: '/',
+      controller: 'HomeCtrl',
       templateUrl: 'views/home.html',
     })
     .state('workshops', {
@@ -78,4 +79,15 @@ angular.module('app', [
   function ($rootScope) {
         
   }
-]);
+])
+
+
+.controller('HomeCtrl',[
+  '$scope',
+  function($scope) {
+    $scope.slides = [
+      { image: 'images/bckg2.jpg', text: 'Your Fab Lab in Macau'}
+    ]
+  }
+])
+;
