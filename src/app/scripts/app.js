@@ -82,6 +82,12 @@ angular.module('app', [
 ])
 
 
+.controller('WorkshopsCtrl',[
+  '$scope',
+  function($scope) {
+  }
+])
+
 .controller('HomeCtrl',[
   '$scope',
   function($scope) {

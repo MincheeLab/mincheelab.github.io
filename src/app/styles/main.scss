@@ -3,7 +3,7 @@
 // $fa-font-path: '../fonts';
 $icon-font-path: "../fonts";
 // bower:scss
-@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 //http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext
 
@@ -57,7 +57,7 @@ $icon-font-path: "../fonts";
 }
 
 .navbar-default {
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(255,255,255,0.9);
   border-color: transparent;
 }
 
@@ -98,7 +98,7 @@ $icon-font-path: "../fonts";
 }
 
 .make {
-  color: #6CA9E6;
+  color: #00b3fe; //#6CA9E6;
 }
 
 .share {
@@ -128,12 +128,23 @@ $icon-font-path: "../fonts";
 ------------------------- */
 .feature {
   background-repeat: no-repeat;
-padding-bottom: 65px;
-padding-top: 50px;
-text-align: center;
-  background-color: #1ABC9C;
-color: #E4E6E5;
-padding-top: 90px;
+  padding-bottom: 65px;
+  padding-top: 50px;
+  text-align: center;
+  padding-top: 90px;
+
+  .green {
+    background-color: #1ABC9C;
+    color: #E4E6E5;
+  }
+  .orange {
+    background-color: #f39c12;
+    color: #e4e6e5;
+  }
+  .darkblue {
+    background-color: #34495e;
+    color: #e4e6e5;
+  }
 }
 
 

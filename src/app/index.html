@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="Minchee Foundation, Minchee Lab the first fab lab in Macau, China" />	    
     <meta name="keywords" content="fablab, macau, macao, china, sharing, making, experimenting, education, research">
-    
+    <base href="/">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -38,49 +38,8 @@
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-    <header class="navbar-wrapper">
-      <div class="ccontainer-fluid">
-
-        <div class="navbar navbar-default navbar-fixed-top nnavbar-static-top" role="navigation">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="/" title="Minchee Lab">
-                minchee
-              </a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a ui-sref="workshops">Workshops</a></li>
-<!--                <li><a href="#contact">Blog</a></li>-->
-                <li><a ui-sref="projects">Projects</a></li>
-                <!--                <li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <span class="caret"></span></a>
-<ul class="dropdown-menu" role="menu">
-<li><a href="#">Keychains</a></li>
-<li><a href="#">Another action</a></li>
-<li><a href="#">Something else here</a></li>
-<li class="divider"></li>
-<li class="dropdown-header">Nav header</li>
-<li><a href="#">Separated link</a></li>
-<li><a href="#">One more separated link</a></li>
-</ul>
-</li> -->
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </header>
-
-   <div ui-view></div>
+  <div ng-include src="'views/navbar.html'"></div>
+  <div id="main" role="main" ui-view></div>
    
     
 
@@ -103,6 +62,20 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/jquery.easing/js/jquery.easing.min.js"></script>
     <script src="bower_components/lodash/dist/lodash.compat.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
