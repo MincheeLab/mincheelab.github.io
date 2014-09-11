@@ -79,8 +79,8 @@ gulp.task('images', function () {
 });
 
 gulp.task('fonts', function () {
-  return gulp.src($.mainBowerFiles())
-    .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
+  return gulp.src('app/fonts/*.{eot,svg,ttf,woff}') //$.mainBowerFiles())
+//    .pipe($.filter('app/**/*.{eot,svg,ttf,woff}'))
     .pipe($.flatten())
     .pipe(gulp.dest('../fonts'))
     .pipe($.size());

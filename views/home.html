@@ -1,0 +1,111 @@
+<!--
+<carousel>
+  <slide active="true">
+    <img src="images/bckg2.jpg" alt="Macau Fab Lab">
+    <div class="carousel-caption" style="padding-bottom: 150px">
+      <img src="images/minchee_logo.png" alt="Minchee Lab logo" style="width:150px">
+      <h1>Your Fab Lab in <em>Macau</em></h1>
+    </div>
+  </slide>
+  <slide>
+    <img src="images/bckg8.jpg" alt="Minchee Workshops">
+    <div class="carousel-caption">
+    <h1>Join a Workshop!</h1>
+    <span class="comingsoon">...coming soon...</span>
+  </div>
+  </slide>
+  <slide ng-repeat="slide in slides" active="slide.active">
+    <img ng-src="{{slide.image}}" style="margin:auto;">
+    <div class="carousel-caption" style="padding-bottom: 150px">
+      <img src="images/minchee_logo.png" alt="Minchee Lab logo" style="width:150px">
+      <h1>{{ slide.title }}
+        Your Fab Lab in <em>Macau</em>
+      </h1>
+    </div>
+  </slide>
+</carousel>
+-->
+
+
+<div id="mincheecarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#mincheecarousel" data-slide-to="0" class="active"></li>
+    <li class="" data-target="#mincheecarousel" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active slide1">
+      <img src="images/bckg2.jpg" alt="Macau Fab Lab">
+      <div class="carousel-caption">
+        <img src="images/minchee_logo.png" alt="Minchee Lab logo" style="width:150px;">
+        <h1>
+          <small>Welcome to</small><br>
+          <span style="font-size:60px">Minchee Lab</span>
+        </h1>
+        <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p> -->
+      </div>
+    </div>
+    <div class="item slide2">
+      <img src="images/bckg8.jpg" alt="Workshops">
+      <h1 class="caption-bottom">
+        <a ui-sref="workshops">Join a Workshop!</a><br>
+        <small><small><a ui-sref="workshops">the schedule for 2014-2015 is now available, get it while it is hot ;-)</a></small></small>
+      </h1>
+      <div class="carousel-caption"></div>
+    </div>
+  </div>
+</div>
+
+<div class="container marketing">
+  <div class="row">
+    <div class="col-lg-4">
+      <i class="fa fa-cubes learn"></i>
+      <h2 class="learn">Learn</h2>
+      <p>Let's learn together something new everyday. Life is too short to not discover new things.</p>
+    </div>
+    <div class="col-lg-4">
+      <i class="fa fa-flask ffa-paper-plane-o make"></i>
+      <h2 class="make">Make</h2>
+      <p>Customize stuff, build your own objects and connect them to the Internet of Things.</p>
+    </div>
+    <div class="col-lg-4">
+      <i class="fa fa-share-alt share"></i>
+      <!-- <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;"> -->
+      <h2 class="share">Share</h2>
+      <p>Because doing alone is no fun and because we are always learning more with others.</p>
+      <!-- <p><a class="btn btn-default" href="#" role="button">View details »</a></p> -->
+    </div>
+  </div>
+</div>
+
+<div class="feature green" id="about">
+  <div class="container">
+    <blockquote  class="face">
+      <img src="images/people_neilgershenfeld.jpg" class="img-circle people small pull-left" alt="NEIL GERSHENFELD">
+      Give ordinary people the right tools, and they will design and build the most extraordinary things.  
+      <footer>Neil Gershenfeld</footer>
+    </blockquote>
+    
+    <blockquote class="face blockquote-reverse">
+     <img src="images/people_massimobanzi.jpg" class="img-circle people small pull-right" alt="Massimo Banzi">
+      ????  
+      <footer>Massimo Banzi</footer>
+    </blockquote>
+
+   
+<!--
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Keychain Generator</h2>
+        <p class="lead">Following the 2014 Science and Technology Week, we still have to print some keychains. If your name is on the list, you'll get inform. You can also check this page to get more info. In the coming days we will start publishing real-time update.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="images/keychains1.jpg" class="img-responsive" alt="Keychains">
+      </div>
+    </div>
+-->
+  </div>
+</div>
+
+
+<div ng-include src="'views/footer.html'"></div>

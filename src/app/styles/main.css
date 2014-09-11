@@ -4713,17 +4713,17 @@ button.close {
 
 /* Workshops 
 --------------------------- */
-.ws1 {
-  background-color: #00979C;
-  color: white; }
-
-.ws2 {
-  background-color: #C61931;
-  color: white; }
-
-.ws3 {
-  background-color: #71456C;
-  color: white; }
+.ws-bck {
+  color: white;
+  padding: 3px; }
+  .ws-bck a {
+    color: #c9c9c9; }
+  .ws-bck.arduino {
+    background-color: #00979C; }
+  .ws-bck.raspberrypi {
+    background-color: #C61931; }
+  .ws-bck.digitalf {
+    background-color: #71456C; }
 
 blockquote.face {
   border: none; }

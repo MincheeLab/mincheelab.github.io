@@ -36,6 +36,10 @@ $learn: #FFA500;
 $make: #00b3fe; //#6CA9E6;
 $share: #FF6C6C;
 
+$arduino: #00979C;
+$raspberrypi: #C61931;
+$digitalf: #71456C;
+
 
 /* NAVBAR
 -------------------------------------------------- */
@@ -194,17 +198,19 @@ $share: #FF6C6C;
 
 /* Workshops 
 --------------------------- */
-.ws1 {
-  background-color: #00979C;
+.ws-bck {
   color: white;
-}
-.ws2 {
-  background-color: #C61931;
-  color: white;
-}
-.ws3 {
-  background-color: #71456C;
-  color: white;
+  padding: 3px;
+  a { color: #c9c9c9; }
+  &.arduino {
+    background-color: $arduino;
+  }
+  &.raspberrypi {
+    background-color: $raspberrypi;
+  }
+  &.digitalf {
+    background-color: $digitalf;
+  }
 }
 
 
