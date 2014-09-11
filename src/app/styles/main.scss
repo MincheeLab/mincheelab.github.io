@@ -32,6 +32,11 @@ $icon-font-path: "../fonts";
   font-family: 'kalingaregular';
 }
 
+$learn: #FFA500;
+$make: #00b3fe; //#6CA9E6;
+$share: #FF6C6C;
+
+
 /* NAVBAR
 -------------------------------------------------- */
 .navbar-brand {
@@ -67,6 +72,27 @@ $icon-font-path: "../fonts";
   height: 500px;
   margin-bottom: 60px;
   
+  .carousel-indicators {
+    top: 60px;
+  }
+  a { color: white; 
+    &:hover { text-decoration: none; }
+  }
+  h1 {
+    color: white;
+    small { color: white; font-style: italic; }
+
+    &.caption-bottom {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      background-color: rgba(0,0,0,0.6);
+      width: 100%;
+      padding: 20px;
+      margin: 0px;
+    }
+  }
+
   .carousel-caption {
     z-index: 10;
   }
@@ -85,25 +111,12 @@ $icon-font-path: "../fonts";
   height: 500px;
 }
 
-.comingsoon {
-  background-color: rgba(255,255,255, 0.5);
-  font-size: 30px;
-  border-radius: 4px;
-}
 
 /* Learn, Make, Share
 -------------------------------------------------- */
-.learn { 
-  color: orange;    
-}
-
-.make {
-  color: #00b3fe; //#6CA9E6;
-}
-
-.share {
-  color: #FF6C6C;
-}
+.learn {  color: $learn; }
+.make  {  color: $make; }
+.share {  color: $share; }
 
 /* Marketing Message */
 .marketing {
@@ -128,29 +141,31 @@ $icon-font-path: "../fonts";
 ------------------------- */
 .feature {
   background-repeat: no-repeat;
-  padding-bottom: 65px;
-  padding-top: 50px;
-  text-align: center;
-  padding-top: 90px;
-
-  .green {
+  padding: 50px 10px 50px 20px;
+  margin: 0px; 
+  
+  &.green {
     background-color: #1ABC9C;
     color: #E4E6E5;
   }
-  .orange {
+  &.orange {
     background-color: #f39c12;
-    color: #e4e6e5;
+    color: white; //#e4e6e5;
   }
-  .darkblue {
+  &.darkblue {
     background-color: #34495e;
     color: #e4e6e5;
+  }
+  
+  &.extra {
+    margin: 50px 0px 50px 0px;
   }
 }
 
 
 /* FOOTER 
 --------------------------- */
-footer {
+.foot {
   background-color: #2F2F2F;
   padding-bottom: 150px;
   color: white;
@@ -167,3 +182,43 @@ footer {
 }
 
 
+/* Table 
+--------------------------- */
+.table {
+  h2 {
+    font-size: 20px;
+    margin: 0px 0px 6px 0px;
+  }
+}
+
+
+/* Workshops 
+--------------------------- */
+.ws1 {
+  background-color: #00979C;
+  color: white;
+}
+.ws2 {
+  background-color: #C61931;
+  color: white;
+}
+.ws3 {
+  background-color: #71456C;
+  color: white;
+}
+
+
+blockquote.face {
+  border: none;
+  &.blockquote-reverse { border:none; }
+  img {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+.people {
+  border: 1px solid white;
+  &.small {
+    width: 50px; height: 50px;
+  }
+}

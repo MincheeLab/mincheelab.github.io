@@ -23,7 +23,6 @@ function proxyMiddleware(req, res, next) {
 
 function browserSyncInit(baseDir, files, browser) {
   browser = browser === undefined ? 'default' : browser;
-
   browserSync.instance = browserSync.init(files, {
     startPath: '/index.html',
     server: {
@@ -40,7 +39,7 @@ gulp.task('serve', ['watch'], function () {
     'app',
     '.tmp'
   ], [
-    'app/*.html',
+    'app/**/*.html',
     '.tmp/styles/**/*.css',
     'app/scripts/**/*.js',
     'app/partials/**/*.html',
@@ -50,7 +49,7 @@ gulp.task('serve', ['watch'], function () {
 });
 
 gulp.task('serve:dist', ['build'], function () {
-  browserSyncInit('dist');
+  browserSyncInit('..');
 });
 
 gulp.task('serve:e2e', function () {
@@ -58,5 +57,5 @@ gulp.task('serve:e2e', function () {
 });
 
 gulp.task('serve:e2e-dist', ['watch'], function () {
-  browserSyncInit('dist', null, []);
+  browserSyncInit('..', null, []);
 });
