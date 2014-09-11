@@ -26,12 +26,10 @@ angular.module('app', [
     $stateProvider
     .state('home',{
       url: '/',
-      controller: 'HomeCtrl',
       templateUrl: 'views/home.html',
     })
     .state('workshops', {
       url: '/workshops',
-//      controller: 'WorkshopsCtrl',
       templateUrl: 'views/workshops.html'
     })
     .state('workshops.item',{
@@ -57,14 +55,6 @@ angular.module('app', [
   '$stateParams',
   function($scope, $stateParams) {
     $scope.ws = $stateParams.wsday;
-  }
-])
-
-.controller('HomeCtrl',[
-  '$scope',
-  function($scope) {
-    
-    console.log('at home, home sweet home...');
   }
 ])
 ;

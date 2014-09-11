@@ -148,6 +148,11 @@ $digitalf: #71456C;
   padding: 50px 10px 50px 20px;
   margin: 0px; 
   
+  .logo {
+    width: 100px;
+
+  }
+  
   &.green {
     background-color: #1ABC9C;
     color: #E4E6E5;
@@ -155,14 +160,27 @@ $digitalf: #71456C;
   &.orange {
     background-color: #f39c12;
     color: white; //#e4e6e5;
+    a { color: white; }
   }
   &.darkblue {
     background-color: #34495e;
     color: #e4e6e5;
   }
+  &.arduino {
+    background-color: $arduino;
+    color: #d6d6d6;
+  }
+  &.raspberrypi {
+    background-color: $raspberrypi;
+    color: white;
+  }
   
   &.extra {
     margin: 50px 0px 50px 0px;
+  }
+  &.extra-light {
+    margin: 50px 0px -50px 0px;
+    padding: 10px;
   }
 }
 

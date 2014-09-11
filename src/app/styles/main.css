@@ -4679,17 +4679,30 @@ button.close {
   background-repeat: no-repeat;
   padding: 50px 10px 50px 20px;
   margin: 0px; }
+  .feature .logo {
+    width: 100px; }
   .feature.green {
     background-color: #1ABC9C;
     color: #E4E6E5; }
   .feature.orange {
     background-color: #f39c12;
     color: white; }
+    .feature.orange a {
+      color: white; }
   .feature.darkblue {
     background-color: #34495e;
     color: #e4e6e5; }
+  .feature.arduino {
+    background-color: #00979C;
+    color: #d6d6d6; }
+  .feature.raspberrypi {
+    background-color: #C61931;
+    color: white; }
   .feature.extra {
     margin: 50px 0px 50px 0px; }
+  .feature.extra-light {
+    margin: 50px 0px -50px 0px;
+    padding: 10px; }
 
 /* FOOTER 
 --------------------------- */
