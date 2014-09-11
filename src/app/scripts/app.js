@@ -16,10 +16,10 @@ angular.module('app', [
   function ($stateProvider, $urlRouterProvider, $locationProvider) {
     
     var isDev = (document.URL.search('http://localhost') >= 0) ? true : false;
-    $locationProvider.html5Mode(true);  
+//    $locationProvider.html5Mode(true);  
     $urlRouterProvider.otherwise('/');
     if (isDev) {
-      $locationProvider.html5Mode(false);  
+//      $locationProvider.html5Mode(false);  
       console.log('¡¡¡¡ DEV MODE ON !!!!');
     }
     
