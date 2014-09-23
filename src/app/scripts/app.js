@@ -16,8 +16,9 @@ angular.module('app', [
   '$locationProvider',
   '$translateProvider',
   function ($stateProvider, $urlRouterProvider, $locationProvider, $translateProvider) {
-//    $translateProvider.preferredLanguage('en');
-    $translateProvider.determinePreferredLanguage();
+    $translateProvider.preferredLanguage('en');
+//    $translateProvider.determinePreferredLanguage();
+
     var isDev = (document.URL.search('http://localhost') >= 0) ? true : false;
 //    $locationProvider.html5Mode(true);  
     $urlRouterProvider.otherwise('/');

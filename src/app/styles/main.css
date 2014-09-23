@@ -4602,6 +4602,11 @@ button.close {
   color: #ccc;
   font-variant-caps: all-small-caps; }
 
+/* List
+------------------------------- */
+ul.list-info {
+  line-height: 2em; }
+
 /* CAROUSEL
 -------------------------------------------------- */
 .carousel {
