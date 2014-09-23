@@ -17,6 +17,8 @@ $icon-font-path: "../fonts";
     font-weight: normal;
     font-style: normal;
 }
+
+
 //@font-face {
 //    font-family: 'kalingabold';
 //    src: url($icon-font-path + '/kalingab-webfont.eot');
@@ -38,7 +40,7 @@ $share: #FF6C6C;
 
 $arduino: #00979C;
 $raspberrypi: #C61931;
-$digitalf: #71456C;
+$dfab: #71456C;
 
 
 /* NAVBAR
@@ -72,6 +74,17 @@ $digitalf: #71456C;
 
 /* CAROUSEL
 -------------------------------------------------- */
+//div class="bgSizeCover">
+//  <p>Try resizing this window and see what happens.</p>
+//</div>
+//
+//.bgSizeCover {
+//  height: 200px;
+//  background-image: url('/files/2917/fxlogo.png');
+//  background-size: cover;
+//  border: 2px solid darkgray;
+//  color: #000; text-shadow: 1px 1px 0 #fff;
+
 .carousel {
   height: 500px;
   margin-bottom: 60px;
@@ -174,6 +187,10 @@ $digitalf: #71456C;
     background-color: $raspberrypi;
     color: white;
   }
+  &.dfab {
+    background-color: $dfab;
+    color: white;
+  }
   
   &.extra {
     margin: 50px 0px 50px 0px;
@@ -211,8 +228,45 @@ $digitalf: #71456C;
     font-size: 20px;
     margin: 0px 0px 6px 0px;
   }
+  tbody {
+    td, th {
+      time {
+        font-family: 'Lato', sans-serif;
+        width: 150px;
+      }
+    }
+  }
 }
 
+/* Schedule
+--------------------------- */
+time {
+  font-family: 'Lato', sans-serif;
+  display: inline-block;
+  width: 100%;
+  color: rgb(255, 255, 255);
+//  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+
+  span {
+    display: none;
+  }
+  .day {
+    display: block;
+//    font-size: 56pt;
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 1;
+  }
+  .month {
+    display: block;
+//    font-size: 24pt;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1;
+  }
+}
 
 /* Workshops 
 --------------------------- */
@@ -226,8 +280,8 @@ $digitalf: #71456C;
   &.raspberrypi {
     background-color: $raspberrypi;
   }
-  &.digitalf {
-    background-color: $digitalf;
+  &.dfab {
+    background-color: $dfab;
   }
 }
 

@@ -58,6 +58,7 @@ gulp.task('html', ['styles', 'scripts', 'partials'], function () {
     .pipe(jsFilter.restore())
     .pipe(cssFilter)
     .pipe($.replace('bower_components/bootstrap-sass-official/assets/fonts/bootstrap','fonts'))
+    .pipe($.replace('bower_components/font-awesome/fonts','fonts'))
     .pipe($.csso())
     .pipe(cssFilter.restore())
     .pipe($.useref.restore())

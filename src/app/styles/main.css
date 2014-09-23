@@ -4698,6 +4698,9 @@ button.close {
   .feature.raspberrypi {
     background-color: #C61931;
     color: white; }
+  .feature.dfab {
+    background-color: #71456C;
+    color: white; }
   .feature.extra {
     margin: 50px 0px 50px 0px; }
   .feature.extra-light {
@@ -4723,6 +4726,31 @@ button.close {
 .table h2 {
   font-size: 20px;
   margin: 0px 0px 6px 0px; }
+.table tbody td time, .table tbody th time {
+  font-family: 'Lato', sans-serif;
+  width: 150px; }
+
+/* Schedule
+--------------------------- */
+time {
+  font-family: 'Lato', sans-serif;
+  display: inline-block;
+  width: 100%;
+  color: white;
+  text-align: center;
+  text-transform: uppercase; }
+  time span {
+    display: none; }
+  time .day {
+    display: block;
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 1; }
+  time .month {
+    display: block;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1; }
 
 /* Workshops 
 --------------------------- */
@@ -4735,7 +4763,7 @@ button.close {
     background-color: #00979C; }
   .ws-bck.raspberrypi {
     background-color: #C61931; }
-  .ws-bck.digitalf {
+  .ws-bck.dfab {
     background-color: #71456C; }
 
 blockquote.face {

@@ -7,19 +7,22 @@ angular.module('app', [
   'ngSanitize',
   'ui.router',
   'ui.bootstrap',
-  'restangular'
+  'restangular',
+  'pascalprecht.translate'
 ])
 .config([
   '$stateProvider',
   '$urlRouterProvider',
   '$locationProvider',
-  function ($stateProvider, $urlRouterProvider, $locationProvider) {
-    
+  '$translateProvider',
+  function ($stateProvider, $urlRouterProvider, $locationProvider, $translateProvider) {
+//    $translateProvider.preferredLanguage('en');
+    $translateProvider.determinePreferredLanguage();
     var isDev = (document.URL.search('http://localhost') >= 0) ? true : false;
 //    $locationProvider.html5Mode(true);  
     $urlRouterProvider.otherwise('/');
     if (isDev) {
-//      $locationProvider.html5Mode(false);  
+      $locationProvider.html5Mode(false);  
       console.log('¡¡¡¡ DEV MODE ON !!!!');
     }
     
@@ -46,9 +49,31 @@ angular.module('app', [
       controller: 'ProjectCtrl',
       templateUrl: 'views/project.html'
     });
+    
+    
+    $translateProvider.translations('en', {
+      welcomeTo: 'Welcome to',
+      mincheeLab: 'Minchee Lab'
+    });
+    $translateProvider.translations('zh', {
+      welcomeTo: 'ZHWelcome to',
+      mincheeLab: 'ZHMinchee Lab'
+    });
   }
 ])
 
+
+.controller('NavBarCtrl', [
+  '$scope',
+  '$translate',
+  function($scope, $translate) {
+    $scope.currentLanguage = $translate.preferredLanguage();
+    $scope.changeLanguage = function (langKey) {
+      $translate.use(langKey);
+      $scope.currentLanguage = langKey;
+    };
+  }
+])
 
 .controller('WorkshopItemCtrl',[
   '$scope',

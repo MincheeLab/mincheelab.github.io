@@ -1,4 +1,4 @@
- <header class="navbar-wrapper">
+ <header class="navbar-wrapper" ng-controller="NavBarCtrl">
       <div class="ccontainer-fluid">
 
         <div class="navbar navbar-default navbar-fixed-top nnavbar-static-top" role="navigation">
@@ -15,7 +15,7 @@
               </a>
             </div>
             <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
+              <ul class="nav navbar-nav nnavbar-right">
                 <li class="active"><a ui-sref="home">Home</a></li>
                 <li><a ui-sref="workshops">Workshops</a></li>
 <!--                <li><a href="#contact">Blog</a></li>-->
@@ -33,6 +33,10 @@
 <li><a href="#">One more separated link</a></li>
 </ul>
 </li> -->
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li ng-hide="currentLanguage == 'en'"><a ng-click="changeLanguage('en')">En</a></li>
+                <li ng-hide="currentLanguage == 'zh'"><a ng-click="changeLanguage('zh')">Zh</a></li>
               </ul>
             </div>
           </div>
