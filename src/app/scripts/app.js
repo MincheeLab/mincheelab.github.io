@@ -103,4 +103,44 @@ angular.module('app', [
     $scope.ws = $stateParams.wsday;
   }
 ])
+
+.directive('navMenu',[
+  '$state',
+  function($state) {
+    return function(scope, element, attrs) {
+      var links = element.find('a'),
+          onClass = attrs.navMenu || 'active',
+          link,
+          url,
+          currentLink,
+          urlMap = {},
+          i;
+
+      for (i = 0; i < links.length; i++) {
+        link = angular.element(links[i]);
+        url = link.attr('ui-sref');
+        if (url) {
+          urlMap[url] = link;
+        }
+      }
+      
+      var activateLink = function(newLink) {
+        var pathLink = urlMap[newLink];
+        if (pathLink) {
+          if (currentLink) {
+            currentLink.parent().removeClass(onClass);
+          }
+          currentLink = pathLink;
+          currentLink.parent().addClass(onClass);
+        }
+      };
+      activateLink($state.current.name);
+      
+      scope.$on('$stateChangeStart', function(event, next){
+        activateLink(next.name);
+      });
+    };
+  }
+])
+
 ;
