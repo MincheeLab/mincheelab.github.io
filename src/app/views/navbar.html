@@ -16,8 +16,8 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav nnavbar-right">
-                <li class="active"><a ui-sref="home">Home</a></li>
-                <li><a ui-sref="workshops">Workshops</a></li>
+                <li class="active"><a ui-sref="home" translate="navHome">Home</a></li>
+                <li><a ui-sref="workshops" translate="navWorkshops">Workshops</a></li>
 <!--                <li><a href="#contact">Blog</a></li>-->
 <!--                <li><a ui-sref="projects">Projects</a></li>-->
 <!--                 <li><a ui-sref="about">About</a></li>-->
@@ -35,8 +35,8 @@
 </li> -->
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li ng-hide="currentLanguage == 'en'"><a ng-click="changeLanguage('en')">En</a></li>
-                <li ng-hide="currentLanguage == 'zh'"><a ng-click="changeLanguage('zh')">Zh</a></li>
+                <li ng-hide="currentLanguage == 'en'"><a href="" ng-click="changeLanguage('en')">En</a></li>
+                <li ng-hide="currentLanguage == 'zh'"><a href="" ng-click="changeLanguage('zh')">Zh</a></li>
               </ul>
             </div>
           </div>

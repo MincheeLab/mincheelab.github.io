@@ -53,11 +53,31 @@ angular.module('app', [
     
     $translateProvider.translations('en', {
       welcomeTo: 'Welcome to',
-      mincheeLab: 'Minchee Lab'
+      mincheeLab: 'Minchee Lab',
+      navHome: 'Home',
+      navWorkshops: 'Workshops',
+      joinWorkshop: 'Join a Workshop!',
+      schedule2014: 'the schedule for 2014-2015 is now available, get it while it is hot ;-)',
+      learn: 'Learn',
+      make: 'Make',
+      share: 'Share',
+      learnText: 'Let\'s learn together something new everyday. Life is too short to not discover new things.',
+      makeText: 'Customize stuff, build your own objects and connect them to the Internet of Things.',
+      shareText: 'Because doing alone is no fun and because we are always learning more with others.',
+      quoteGershenfeld: 'Give ordinary people the right tools, and they will design and build the most extraordinary things.',
+      quoteBanzi: '',
+      getInTouch: 'get in touch with us',
+      workshopsSchedule: 'Workshops Schedule',
+      workshops2014: 'Season 2014/2015',
+      
     });
     $translateProvider.translations('zh', {
       welcomeTo: 'ZHWelcome to',
-      mincheeLab: 'ZHMinchee Lab'
+      mincheeLab: 'ZHMinchee Lab',
+      navHome: 'ZHHome',
+      navWorkshops: 'ZHWorkshops',
+      joinWorkshop: 'Join a Workshop!',
+      schedule2014: 'the schedule for 2014-2015 is now available, get it while it is hot ;-)',
     });
   }
 ])
@@ -65,12 +85,13 @@ angular.module('app', [
 
 .controller('NavBarCtrl', [
   '$scope',
+  '$rootScope',
   '$translate',
-  function($scope, $translate) {
-    $scope.currentLanguage = $translate.preferredLanguage();
+  function($scope, $rootScope, $translate) {
+    $rootScope.currentLanguage = $translate.preferredLanguage();
     $scope.changeLanguage = function (langKey) {
       $translate.use(langKey);
-      $scope.currentLanguage = langKey;
+      $rootScope.currentLanguage = langKey;
     };
   }
 ])
