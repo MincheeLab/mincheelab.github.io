@@ -4591,27 +4591,16 @@ button.close {
 
 /* NAVBAR
 -------------------------------------------------- */
-.navbar-brand {
-  font-family: 'kalingaregular';
-  font-size: 26px; }
-
-.navbar-nav > li > a {
-  font-weight: 900; }
-
-.nav > li > a:hover, .nav > li > a:active {
-  background-color: transparent; }
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20; }
-
 .navbar-default {
   background-color: rgba(255, 255, 255, 0.9);
   border-color: transparent; }
+
+.navbar-nav .navbar-brand {
+  font-family: 'kalingaregular';
+  font-size: 26px; }
+.navbar-nav.languages li a {
+  color: #ccc;
+  font-variant-caps: all-small-caps; }
 
 /* CAROUSEL
 -------------------------------------------------- */
