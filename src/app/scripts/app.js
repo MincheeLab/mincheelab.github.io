@@ -16,9 +16,6 @@ angular.module('app', [
   '$locationProvider',
   '$translateProvider',
   function ($stateProvider, $urlRouterProvider, $locationProvider, $translateProvider) {
-    $translateProvider.preferredLanguage('en');
-//    $translateProvider.determinePreferredLanguage();
-
     var isDev = (document.URL.search('http://localhost') >= 0) ? true : false;
 //    $locationProvider.html5Mode(true);  
     $urlRouterProvider.otherwise('/');
@@ -80,6 +77,8 @@ angular.module('app', [
       joinWorkshop: 'Join a Workshop!',
       schedule2014: 'the schedule for 2014-2015 is now available, get it while it is hot ;-)',
     });
+    $translateProvider.preferredLanguage('en');
+//    $translateProvider.determinePreferredLanguage();
   }
 ])
 
