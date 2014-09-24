@@ -73,12 +73,23 @@ angular.module('app', [
       
     });
     $translateProvider.translations('zh', {
-      welcomeTo: 'ZHWelcome to',
-      mincheeLab: 'ZHMinchee Lab',
-      navHome: 'ZHHome',
-      navWorkshops: 'ZHWorkshops',
-      joinWorkshop: 'Join a Workshop!',
-      schedule2014: 'the schedule for 2014-2015 is now available, get it while it is hot ;-)',
+      welcomeTo: '歡迎來到',
+      mincheeLab: 'Minchee Lab 勉智實驗室',
+      navHome: '首頁',
+      navWorkshops: '工作坊時間表',
+      joinWorkshop: '參加我們的工作坊！',
+      schedule2014: '2014 至 2015 的工作坊時間已經推出, 快D黎睇下啦 ;-)',
+      learn: '學習',
+      make: '製作',
+      share: '分享',
+      learnText: '一齊黎參與學習最新既技術！',
+      makeText: '個人化物件，製作屬於自己既用具，仲可以連接物聯網',
+      shareText: '自己一個做唔好玩架，因為我地通過其他人學習知道得更多',
+      quoteGershenfeld: '比一般人士正確的工具，之後他們可以設計，製作非一般既物件',
+      quoteBanzi: '',
+      getInTouch: '聯絡我地啦！',
+      workshopsSchedule: '工作坊時間表',
+      workshops2014: '2014/2015季度',
     });
   }
 ])
