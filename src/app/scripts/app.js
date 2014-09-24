@@ -16,9 +16,6 @@ angular.module('app', [
   '$locationProvider',
   '$translateProvider',
   function ($stateProvider, $urlRouterProvider, $locationProvider, $translateProvider) {
-    $translateProvider.preferredLanguage('en');
-//    $translateProvider.determinePreferredLanguage();
-
     var isDev = (document.URL.search('http://localhost') >= 0) ? true : false;
 //    $locationProvider.html5Mode(true);  
     $urlRouterProvider.otherwise('/');
@@ -91,6 +88,8 @@ angular.module('app', [
       workshopsSchedule: '工作坊時間表',
       workshops2014: '2014/2015季度',
     });
+    $translateProvider.preferredLanguage('en');
+//    $translateProvider.determinePreferredLanguage();
   }
 ])
 
@@ -113,45 +112,6 @@ angular.module('app', [
   '$stateParams',
   function($scope, $stateParams) {
     $scope.ws = $stateParams.wsday;
-  }
-])
-
-.directive('navMenu',[
-  '$state',
-  function($state) {
-    return function(scope, element, attrs) {
-      var links = element.find('a'),
-          onClass = attrs.navMenu || 'active',
-          link,
-          url,
-          currentLink,
-          urlMap = {},
-          i;
-
-      for (i = 0; i < links.length; i++) {
-        link = angular.element(links[i]);
-        url = link.attr('ui-sref');
-        if (url) {
-          urlMap[url] = link;
-        }
-      }
-      
-      var activateLink = function(newLink) {
-        var pathLink = urlMap[newLink];
-        if (pathLink) {
-          if (currentLink) {
-            currentLink.parent().removeClass(onClass);
-          }
-          currentLink = pathLink;
-          currentLink.parent().addClass(onClass);
-        }
-      };
-      activateLink($state.current.name);
-      
-      scope.$on('$stateChangeStart', function(event, next){
-        activateLink(next.name);
-      });
-    };
   }
 ])
 
