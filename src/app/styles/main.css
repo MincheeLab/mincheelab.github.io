@@ -4593,7 +4593,8 @@ button.close {
 -------------------------------------------------- */
 .navbar-default {
   background-color: rgba(255, 255, 255, 0.9);
-  border-color: transparent; }
+  border-color: transparent;
+  border-bottom: 1px solid #ccc; }
 
 .navbar-nav .navbar-brand {
   font-family: 'kalingaregular';

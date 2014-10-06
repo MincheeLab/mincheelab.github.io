@@ -54,6 +54,7 @@ angular.module('app', [
       mincheeLab: 'Minchee Lab',
       navHome: 'Home',
       navWorkshops: 'Workshops',
+      navDiscussions: 'Discussions',
       joinWorkshop: 'Join a Workshop!',
       schedule2014: 'the schedule for 2014-2015 is now available, get it while it is hot ;-)',
       learn: 'Learn',
@@ -64,7 +65,7 @@ angular.module('app', [
       shareText: 'Because doing alone is no fun and because we are always learning more with others.',
       quoteGershenfeld: 'Give ordinary people the right tools, and they will design and build the most extraordinary things.',
       quoteBanzi: '',
-      getInTouch: 'get in touch with us',
+      getInTouch: 'get social with us',
       workshopsSchedule: 'Workshops Schedule',
       workshops2014: 'Season 2014/2015',
       
