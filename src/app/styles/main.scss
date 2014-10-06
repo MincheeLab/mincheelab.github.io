@@ -165,8 +165,9 @@ ul {
   margin: 0px; 
   
   .logo {
-    width: 100px;
-
+//    width: 100px;
+    max-width: 100px;
+    max-height: 100px;
   }
   
   &.green {
@@ -240,7 +241,7 @@ ul {
     td, th {
       time {
         font-family: 'Lato', sans-serif;
-        width: 150px;
+        width: 100px;
       }
     }
   }
@@ -256,6 +257,8 @@ time {
 //  padding: 5px;
   text-align: center;
   text-transform: uppercase;
+  
+  &.completed { color: #c9c9c9; }
 
   span {
     display: none;
@@ -290,6 +293,10 @@ time {
   }
   &.dfab {
     background-color: $dfab;
+  }
+  &.completed {
+    color: #c9c9c9 !important;
+    opacity: 0.5;
   }
 }
 

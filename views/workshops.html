@@ -26,14 +26,16 @@
         <table class="table">
           <thead></thead>
           <tbody>
-            <tr>
+            <tr class="ws-bck completed">
               <th>
-                 <time datetime="2014-09-26" style="color:black;">
+                <a ui-sref="workshops.item({ wsday: 'ws20140926'})">
+                 <time datetime="2014-09-26" class="completed">
                   <span class="day">26</span>
                   <span class="month">Sep</span>
                   <span class="year">2014</span>
                   <span class="time">19:00-22:30</span>
                 </time>
+                </a>
                 <span class="label label-info pull-right">free <i class="fa fa-star"></i></span>
               </th>
               <td>
@@ -45,15 +47,19 @@
             </tr>
             <tr class="ws-bck raspberrypi">
               <th>
+               <a ui-sref="workshops.item({ wsday: 'ws20141031'})">
                 <time datetime="2014-10-31">
                   <span class="day">31</span>
                   <span class="month">Oct</span>
                   <span class="year">2014</span>
                   <span class="time">19:00-22:30</span>
                 </time>
+                </a>
               </th>
               <td>
+               <a ui-sref="workshops.item({ wsday: 'ws20141031'})">
                <p class="hexagon pull-right"><span><br>REGISTRATION<br>OPEN</span></p>
+                </a>
                 <h2>Raspberry Pi 101</h2>
                 <p>Raspberry Pi Fundamentals
                   <a ui-sref="workshops.item({ wsday: 'ws20141031'})">read more <i class="fa fa-angle-double-right"></i></a>
@@ -62,36 +68,37 @@
             </tr>
             <tr class="ws-bck dfab">
               <th>
-                 <time datetime="2014-11-20">
-                  <span class="day">16</span>
+                <a ui-sref="workshops.item({ wsday: 'ws20141123'})">
+                 <time datetime="2014-11-23">
+                  <span class="day">23</span>
                   <span class="month">Nov</span>
                   <span class="year">2014</span>
                   <span class="time">ALL DAY</span>
                 </time>
+                </a>
               </th>
               <td>
                 <h2>"Make Your Own 3D Printer"</h2>
-                This is a 2 full-days workshop co-organized with This Is My City Festival
-                <br><i>...more soon...</i>
+                This is a 2 full-days workshop co-organized with `This Is My City` Festival
+                <a ui-sref="workshops.item({ wsday: 'ws20141123'})">read more <i class="fa fa-angle-double-right"></i></a>
               </td>
             </tr>
             <tr>
               <th>
-                 <time datetime="2014-11-19" style="color:black;">
-                  <span class="day">19</span>
+                 <time datetime="2014-11-26" style="color:black;">
+                  <span class="day">26</span>
                   <span class="month">Nov</span>
                   <span class="year">2014</span>
-                  <span class="time">19:00-22:30</span>
+                  <span class="time">17:00-18:00</span>
                 </time>
                 <span class="label label-info pull-right">free <i class="fa fa-star"></i></span>
               </th>
               <td>
                 <h2>Conference</h2>
-                <i>"The Maker movement: a chance for Macau?"</i>
+                <i>"The Maker movement: a chance for Macau!"</i>
                 ...more soon...
                 <!--              <a ui-sref="workshops.item({ wsday: 'ws20141120'})">read more <i class="fa fa-angle-double-right"></i></a>-->
-                <p>
-                  <br>follow up by the first screening in Macau of the <i class="fa fa-video-camera"></i> "<a href="http://makerthemovie.com/" target="_blank">Maker the movie</a>"</p>
+<!--                <p><br>follow up by the first screening in Macau of the <i class="fa fa-video-camera"></i> "<a href="http://makerthemovie.com/" target="_blank">Maker the movie</a>"</p>-->
               </td>
             </tr>
             <tr class="ws-bck dfab">
@@ -111,12 +118,14 @@
             </tr>
             <tr class="ws-bck arduino">
               <th>
+               <a ui-sref="workshops.item({ wsday: 'ws20141212'})">
                 <time datetime="2014-12-12">
                   <span class="day">12</span>
                   <span class="month">Dec</span>
                   <span class="year">2014</span>
                   <span class="time">19:00-22:30</span>
                 </time>
+                </a>
               </th>
               <td>
                 <h2>Arduino 101</h2>

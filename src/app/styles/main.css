@@ -4675,7 +4675,8 @@ ul.list-info {
   padding: 50px 10px 50px 20px;
   margin: 0px; }
   .feature .logo {
-    width: 100px; }
+    max-width: 100px;
+    max-height: 100px; }
   .feature.green {
     background-color: #1ABC9C;
     color: #E4E6E5; }
@@ -4725,7 +4726,7 @@ ul.list-info {
   position: relative; }
 .table tbody td time, .table tbody th time {
   font-family: 'Lato', sans-serif;
-  width: 150px; }
+  width: 100px; }
 
 /* Schedule
 --------------------------- */
@@ -4736,6 +4737,8 @@ time {
   color: white;
   text-align: center;
   text-transform: uppercase; }
+  time.completed {
+    color: #c9c9c9; }
   time span {
     display: none; }
   time .day {
@@ -4762,6 +4765,9 @@ time {
     background-color: #C61931; }
   .ws-bck.dfab {
     background-color: #71456C; }
+  .ws-bck.completed {
+    color: #c9c9c9 !important;
+    opacity: 0.5; }
 
 blockquote.face {
   border: none; }
