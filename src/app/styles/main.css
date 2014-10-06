@@ -4805,5 +4805,7 @@ blockquote.face {
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     border-top: 25px solid black; }
+  .hexagon span {
+    font-size: 13px; }
 
 /*# sourceMappingURL=main.css.map */
