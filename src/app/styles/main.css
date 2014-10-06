@@ -4720,6 +4720,8 @@ ul.list-info {
 .table h2 {
   font-size: 20px;
   margin: 0px 0px 6px 0px; }
+.table tbody tr .comingsoon {
+  position: relative; }
 .table tbody td time, .table tbody th time {
   font-family: 'Lato', sans-serif;
   width: 150px; }
@@ -4773,5 +4775,34 @@ blockquote.face {
   .people.small {
     width: 50px;
     height: 50px; }
+
+/* Hexagon
+----------------------------- */
+.hexagon {
+  width: 100px;
+  height: 55px;
+  background: black;
+  position: relative;
+  text-align: center; }
+  .hexagon:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid black; }
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid black; }
 
 /*# sourceMappingURL=main.css.map */
