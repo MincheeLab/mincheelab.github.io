@@ -29,6 +29,10 @@ angular.module('app', [
       url: '/',
       templateUrl: 'views/home.html',
     })
+    .state('about',{
+      url: '/about',
+      templateUrl: 'views/about.html'
+    })
     .state('workshops', {
       url: '/workshops',
       templateUrl: 'views/workshops.html'
@@ -53,6 +57,7 @@ angular.module('app', [
       welcomeTo: 'Welcome to',
       mincheeLab: 'Minchee Lab',
       navHome: 'Home',
+      navAbout: 'About',
       navWorkshops: 'Workshops',
       navDiscussions: 'Discussions',
       joinWorkshop: 'Join a Workshop!',

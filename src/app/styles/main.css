@@ -4603,6 +4603,9 @@ button.close {
   color: #ccc;
   font-variant-caps: all-small-caps; }
 
+#main {
+  margin-top: 50px; }
+
 /* List
 ------------------------------- */
 ul.list-info {
@@ -4657,16 +4660,19 @@ ul.list-info {
   color: #FF6C6C; }
 
 /* Marketing Message */
-.marketing .col-lg-4 {
+.marketing {
   margin-bottom: 20px;
-  text-align: center; }
-  .marketing .col-lg-4 i.fa {
-    font-size: 80px; }
-  .marketing .col-lg-4 p {
-    margin-right: 10px;
-    margin-left: 10px; }
-.marketing h2 {
-  font-weight: normal; }
+  margin-top: 40px; }
+  .marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center; }
+    .marketing .col-lg-4 i.fa {
+      font-size: 80px; }
+    .marketing .col-lg-4 p {
+      margin-right: 10px;
+      margin-left: 10px; }
+  .marketing h2 {
+    font-weight: normal; }
 
 /* Featurettes
 ------------------------- */
@@ -4688,6 +4694,9 @@ ul.list-info {
   .feature.darkblue {
     background-color: #34495e;
     color: #e4e6e5; }
+  .feature.brown {
+    background-color: #2F2F2F;
+    color: white; }
   .feature.arduino {
     background-color: #00979C;
     color: #d6d6d6; }
@@ -4779,6 +4788,9 @@ blockquote.face {
 
 .people {
   border: 1px solid white; }
+  .people.medium {
+    width: 70px;
+    height: 70px; }
   .people.small {
     width: 50px;
     height: 50px; }

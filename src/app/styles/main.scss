@@ -37,6 +37,7 @@ $icon-font-path: "../fonts";
 $learn: #FFA500;
 $make: #00b3fe; //#6CA9E6;
 $share: #FF6C6C;
+$about: #2F2F2F;
 
 $arduino: #00979C;
 $raspberrypi: #C61931;
@@ -65,6 +66,10 @@ $dfab: #71456C;
       }
     }
   }
+}
+
+#main {
+  margin-top: 50px;
 }
 
 /* List
@@ -140,6 +145,9 @@ ul {
 
 /* Marketing Message */
 .marketing {
+  margin-bottom: 20px;
+  margin-top: 40px;
+  
   .col-lg-4 {
     margin-bottom: 20px;
     text-align: center;
@@ -182,6 +190,10 @@ ul {
   &.darkblue {
     background-color: #34495e;
     color: #e4e6e5;
+  }
+  &.brown {
+    background-color: $about;
+    color: white;
   }
   &.arduino {
     background-color: $arduino;
@@ -311,6 +323,9 @@ blockquote.face {
 }
 .people {
   border: 1px solid white;
+  &.medium {
+    width: 70px; height: 70px;
+  }
   &.small {
     width: 50px; height: 50px;
   }
