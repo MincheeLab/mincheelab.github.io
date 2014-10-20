@@ -4685,7 +4685,9 @@ ul.list-info {
     max-height: 100px; }
   .feature.green {
     background-color: #1ABC9C;
-    color: #E4E6E5; }
+    color: #444; }
+    .feature.green a {
+      color: black; }
   .feature.orange {
     background-color: #f39c12;
     color: white; }
