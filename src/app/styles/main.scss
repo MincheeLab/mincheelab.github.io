@@ -277,7 +277,7 @@ time {
   text-align: center;
   text-transform: uppercase;
   
-  &.completed { color: #c9c9c9; }
+  &.completed { color: #5a5a5a; }
 
   span {
     display: none;
@@ -314,7 +314,7 @@ time {
     background-color: $dfab;
   }
   &.completed {
-    color: #c9c9c9 !important;
+    color: #5a5a5a !important;
     opacity: 0.5;
   }
 }

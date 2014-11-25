@@ -50,6 +50,10 @@ angular.module('app', [
       url: '/:project',
       controller: 'ProjectCtrl',
       templateUrl: 'views/project.html'
+    })
+    .state('equipment',{
+      url: '/equipment',
+      templateUrl: 'views/equipment.html'
     });
     
     
@@ -61,6 +65,7 @@ angular.module('app', [
       navWorkshops: 'Workshops',
       navProjects: 'Projects',
       navDiscussions: 'Discussions',
+      navEquipment: 'Equipment',
       joinWorkshop: 'Join a Workshop!',
       schedule2014: 'the schedule for 2014-2015 is now available, get it while it is hot ;-)',
       learn: 'Learn',
