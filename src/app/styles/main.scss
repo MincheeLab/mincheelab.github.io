@@ -180,9 +180,13 @@ ul {
   
   &.green {
     background-color: #1ABC9C;
-    color: #444;
+//    color: #444;
+    color:white;
     a {
       color: black;
+    }
+    small {
+      color: #ccc;
     }
   }
   &.orange {
