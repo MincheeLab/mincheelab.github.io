@@ -37,6 +37,7 @@ $icon-font-path: "../fonts";
 $learn: #FFA500;
 $make: #00b3fe; //#6CA9E6;
 $share: #FF6C6C;
+$about: #2F2F2F;
 
 $arduino: #00979C;
 $raspberrypi: #C61931;
@@ -45,31 +46,38 @@ $dfab: #71456C;
 
 /* NAVBAR
 -------------------------------------------------- */
-.navbar-brand {
-  font-family: 'kalingaregular';
-  font-size: 26px;
-}
-
-.navbar-nav > li > a {
-  font-weight: 900;
-}
-
-.nav > li > a:hover, .nav > li > a:active {
-  background-color: transparent;
-}
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
-}
-
 .navbar-default {
   background-color: rgba(255,255,255,0.9);
   border-color: transparent;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar-nav {
+  .navbar-brand {
+    font-family: 'kalingaregular';
+    font-size: 26px;
+  }
+
+  &.languages {
+    li {
+      a {
+        color: #ccc;
+        font-variant-caps: all-small-caps;
+      }
+    }
+  }
+}
+
+#main {
+  margin-top: 50px;
+}
+
+/* List
+------------------------------- */
+ul {
+  &.list-info {
+    line-height: 2em;
+  }
 }
 
 /* CAROUSEL
@@ -90,7 +98,7 @@ $dfab: #71456C;
   margin-bottom: 60px;
   
   .carousel-indicators {
-    top: 60px;
+    top: 20px;
   }
   a { color: white; 
     &:hover { text-decoration: none; }
@@ -137,6 +145,9 @@ $dfab: #71456C;
 
 /* Marketing Message */
 .marketing {
+  margin-bottom: 20px;
+  margin-top: 40px;
+  
   .col-lg-4 {
     margin-bottom: 20px;
     text-align: center;
@@ -162,13 +173,21 @@ $dfab: #71456C;
   margin: 0px; 
   
   .logo {
-    width: 100px;
-
+//    width: 100px;
+    max-width: 100px;
+    max-height: 100px;
   }
   
   &.green {
     background-color: #1ABC9C;
-    color: #E4E6E5;
+//    color: #444;
+    color:white;
+    a {
+      color: black;
+    }
+    small {
+      color: #ccc;
+    }
   }
   &.orange {
     background-color: #f39c12;
@@ -178,6 +197,10 @@ $dfab: #71456C;
   &.darkblue {
     background-color: #34495e;
     color: #e4e6e5;
+  }
+  &.brown {
+    background-color: $about;
+    color: white;
   }
   &.arduino {
     background-color: $arduino;
@@ -229,10 +252,15 @@ $dfab: #71456C;
     margin: 0px 0px 6px 0px;
   }
   tbody {
+    tr {
+      .comingsoon {
+        position: relative;
+      }
+    }
     td, th {
       time {
         font-family: 'Lato', sans-serif;
-        width: 150px;
+        width: 100px;
       }
     }
   }
@@ -248,6 +276,8 @@ time {
 //  padding: 5px;
   text-align: center;
   text-transform: uppercase;
+  
+  &.completed { color: #5a5a5a; }
 
   span {
     display: none;
@@ -283,6 +313,10 @@ time {
   &.dfab {
     background-color: $dfab;
   }
+  &.completed {
+    color: #5a5a5a !important;
+    opacity: 0.5;
+  }
 }
 
 
@@ -296,7 +330,48 @@ blockquote.face {
 }
 .people {
   border: 1px solid white;
+  &.medium {
+    width: 70px; height: 70px;
+  }
   &.small {
     width: 50px; height: 50px;
   }
 }
+
+/* Hexagon
+----------------------------- */
+.hexagon {
+  width: 100px;
+  height: 55px;
+  background: black;
+  position: relative;
+  text-align: center;
+ 
+  &:before {
+    content: "";
+	position: absolute;
+	top: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 25px solid black;
+  }
+  &:after {
+    content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 25px solid black;
+  }
+  
+  span {
+    font-size: 13px;
+  }
+}
+
