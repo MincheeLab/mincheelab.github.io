@@ -1,3 +1,8 @@
+Requirements:
+* nodejs
+* bower
+* gulp
+
 `npm install && bower install`
 
 

@@ -304,6 +304,11 @@ time {
   color: white;
   padding: 3px;
   a { color: #c9c9c9; }
+  
+  th {
+    width: 140px;
+  }
+  
   &.arduino {
     background-color: $arduino;
   }
